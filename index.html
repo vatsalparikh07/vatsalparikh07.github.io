@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vatsal Parikh Portfolio</title>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="sHk3z06nOFau7skG3O5DgUHHZKSiwxTgmgvpqfdqQXI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/analysis.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+		#calendar {
+            margin-top: 50px;
+        }
+
+		#calendar h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vatsal Parikh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>	
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/pp.jpeg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Vatsal Parikh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Enthusiast   ',
+						'Research Assistant  ',
+						'Machine Learning Specialist  ',
+						'Data Storyteller  '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 100); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 100);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Master's Student in Data Science</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/vatsalparikh07/" target="_blank" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/vatsalparikh07" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Vatsal Vinay Parikh</span></p>
+										<p><span class="title-s">Education: </span> <span>MS in Data Science</span></p>
+										<p><span class="title-s">GPA: </span> <span>3.83</span></p>
+										<p><span class="title-s">Address: </span> <span>Bloomington, IN, 47401</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Python</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>A highly passionate and innovative individual with dedicated experience in the realm of data science and analytics.
+									Proficient in data analysis, visualization, machine learning, database management and python programming, with a proven track record of leading 30+ projects.
+									Possesses excellent interpersonal communication skills and problem-solving abilities & committed to delivering actionable insights.
+									Seeking answers to complex day-to-day problems and applying theoretical knowledge practically through data-driven methodologies.
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Programming:</span> <span>Python, SQL, R</span></li>
+									<li class="d-flex"><span>Libraries:</span> <span>Pandas, NumPy, Matplotlib, OpenCV, SciKit-learn, Streamlit, NLTK, TensorFlow, Keras, PyTorch, ggplot2, dplyr</span></li>
+									<li class="d-flex"><span>Databases:</span> <span>MySQL, PostgreSQL, MongoDB, Neo4j, Cassandra, Snowflake</span></li>
+									<li class="d-flex"><span>Other Tools:</span> <span>AWS, Google Cloud, Linux, Git & GitHub, PowerBI, Tableau, Kubernetes, Docker, Apache Hadoop</span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Experienced Data Science Professional with demonstrated success in leveraging data analytics to inform strategic business decisions. Proficient in data analysis, statistical modeling, machine learning algorithms, and project management, with skills in driving actionable insights through comprehensive data analysis.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2024 - Present</span>
+						<h2>Research Assistant</h2>
+						<span class="position">Kelley School of Business, IU Bloomington</span>
+						<p class="mt-4">
+							<ul>
+								<li>Worked as a Faculty Assistance in Data Science student to employ AI and machine learning techniques over 100,000 on-line conversations related to mental health by extracting data from Reddit API using PRAW.</li>
+								<li>Orchestrated the cleaning and analysis of panel data from a leading weight management platform and applied advanced machine learning algorithms to identify distinct user engagement patterns.</li>
+								<li>Applied NLP algorithms in Python to accurately find personality traits from unstructured social media data and integrated clustering techniques to classify users into distinct personality clusters.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2023 - May 2023</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">IBM x CSRBOX Foundation, India</span>
+						<p class="mt-4">
+							<ul>
+								<li>Worked on developing a hands-on machine learning project "Heart Disease Prediction System" under the guidance of mentors from IBM.</li>
+								<li>Conducted comprehensive exploratory data analysis (EDA) on web-scraped Heart Disease Dataset, employing statistical techniques for data cleaning, preprocessing, and feature engineering.</li>
+								<li>Applied Support Vector Machine (SVM) to achieve the highest accuracy of 93% for classification.</li>
+								<li>Used Python libraries such as sci-kit learn, streamlit to develop an interactive web application that predicts the presence of a heart disease based on several medical parameters.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Aug 2023 - Present</span>
+						<h2>Master of Science in Data Science</h2>
+						<span class="position">Indiana University, Bloomington</span>
+						<h4 class="mt-4">GPA: 3.83 / 4.00</p>
+						<h3 class="mt-4">Coursework:</h3>
+						<ul class="coursework-list">
+							<li>CSCI-B 565: Data Mining</li>
+							<li>CSCI-P 556: Applied Machine Learning</li>
+							<li>STAT-S 520: Introduction to Statistics</li>
+							<li>ILS-Z 639: Social Media Mining</li>
+							<li>DSCI-D 532: Applied Database Technologies</li>
+							<li>INFO-I 513: Usable Artificial Intelligence</li>
+						</ul>
+					</div>
+				</div>
+				
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Jul 2019 - Jun 2023</span>
+    					<h2>Bachelor of Engineering in Information Technology</h2>
+    					<span class="position">Gujarat Technological University, India</span>
+    					<h4 class="mt-3">GPA: 9.31 / 10.00 </p>
+						<h3 class="mt-4">Coursework:</h3>
+							<ul class="coursework-list">
+								<li>3150703: Analysis and Design of Algorithms</li>
+								<li>3161607: Big Data Analytics</li>
+								<li>3161610: Data Warehousing and Mining</li>
+								<li>3161613: Data Analysis and Visualization</li>
+								<li>3171614: Computer Vision</li>
+							</ul>							
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1nuuS6fpwG_CpWJgGUb9B1lU4L2tentRQ/view?usp=drive_link" target = "_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Take a deep dive into my projects and case studies in Python, SQL and ML.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-6 d-flex ftco-animate"> <!-- First project -->
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/vatsalparikh07/diabetes-web-app" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/1.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/vatsalparikh07/diabetes-web-app" target="_blank">Predictive Modelling for Personalized Diabetes Care</a></h3>
+				  <p>Led data mining and developed machine learning models to predict diabetes risk with 75.47% accuracy, resulting in a real-time risk assessment web app.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 d-flex ftco-animate"> <!-- Second project -->
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/vatsalparikh07/garbage-classification-model" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/2.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/vatsalparikh07/garbage-classification-model" target="_blank">Waste Management & Garbage Classification Model</a></h3>
+				  <p>Developed an AI-powered waste management system with real-time video processing capabilities for efficient waste classification and disposal guidance.</p>
+				</div>
+			  </div>
+			</div>	
+		  </div>
+		  <!-- Row for the second line of projects -->
+		  <div class="row d-flex justify-content-center">  
+			<div class="col-md-6 d-flex ftco-animate"> <!-- Third project -->
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/vatsalparikh07/heart-disease-web-app" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/3.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/vatsalparikh07/heart-disease-web-app" target="_blank">Heart Disease Prediction System</a></h3>
+				  <p>Developed a machine learning-based heart disease prediction system achieving 93% accuracy, leveraging SVM and Python libraries.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-6 d-flex ftco-animate"> <!-- Fourth project -->
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/vatsalparikh07/ADT-StayEase" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/vatsalparikh07/ADT-StayEase" target="_blank">StayEase: Simplified Hotel Booking Solution</a></h3>
+				  <p>
+					Created a user-friendly web application for hotel booking, integrating data from Goibibo to facilitate seamless search and booking, with a management dashboard for property owners.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	
+	  <section class="ftco-section" id="challenge-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">100 Days Challenge</h1>
+			  <h2 class="mb-4">100 Days of Data Science Challenge</h2>
+			  <p>Join me in embarking on a 100-day journey of data science exploration and learning!</p>
+			</div>
+		  </div>
+		<!-- Cards for different topics -->
+		<div class="row">
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/python.jpg" class="img-fluid" alt="Python">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">Python</a></h3>
+				<p>Explore Python programming language for data science.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/sql.jpg" class="img-fluid" alt="SQL">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">SQL</a></h3>
+				<p>Learn SQL for data manipulation and querying.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/r.jpg" class="img-fluid" alt="R">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">R</a></h3>
+				<p>Discover R for statistical analysis and data visualization.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/powerbi.jpg" class="img-fluid" alt="PowerBI">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">PowerBI</a></h3>
+				<p>Master PowerBI for data visualization and business intelligence.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/tableau.jpg" class="img-fluid" alt="Tableau">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">Tableau</a></h3>
+				<p>Explore Tableau for interactive data visualization.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4 ftco-animate">
+			<div class="project-wrap">
+				<div class="project-img img-square">
+				<img src="images/case_studies.jpg" class="img-fluid" alt="Case Studies">
+				</div>
+				<div class="text p-4">
+				<h3><a href="#">Case Studies</a></h3>
+				<p>Analyze real-world case studies to apply data science techniques.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		</div>
+		<div class="mb-4"></div> <!-- Add gap here -->
+
+		<div class="container mb-4">
+			<h2 class="text-center">Calendar Progress</h2>
+			<div class="mb-4"></div> <!-- Add gap here -->
+			<p class="text-center">Explore each day in the calendar below, representing a milestone in my personal 100 Days of Data Science Challenge.</p>
+			<p class="text-center">Click on any day to delve into the corresponding challenge on my GitHub repository.</p>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="resume-wrap ftco-animate text-center">
+						<span class="date">June 2024</span>
+						<div class="mb-4"></div> <!-- Add gap here -->
+						<table border="1" cellspacing="0" cellpadding="5" style="width: 70%; margin: 0 auto;">
+							<colgroup>
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th style="text-align: center;">Sun</th>
+									<th style="text-align: center;">Mon</th>
+									<th style="text-align: center;">Tue</th>
+									<th style="text-align: center;">Wed</th>
+									<th style="text-align: center;">Thu</th>
+									<th style="text-align: center;">Fri</th>
+									<th style="text-align: center;">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								  <tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;"><a href = "https://github.com/vatsalparikh07/100-days-of-data-science-challenge/tree/main/Day%201.%20Telecom%20Customer%20Churn%20Classification" target="_blank">3</a></td>
+									<td style="text-align: center;"><a href = "https://github.com/vatsalparikh07/100-days-of-data-science-challenge/tree/main/Day%202.%20Advanced%20Emotion%20Classification%20Using%20NLP%20Techniques" target="_blank">4</a></td>
+									<td style="text-align: center;"><a href="https://github.com/vatsalparikh07/100-days-of-data-science-challenge/tree/main/Day%203.%20Building%20a%20Calorie%20Intake%20Calculator" target="_blank">5</a></td>
+									<td style="text-align: center;"><a href="https://github.com/vatsalparikh07/100-days-of-data-science-challenge/tree/main/Day%204.%20Sentiment%20Analysis%20on%20GameSphere%20Game%20Reviews" target="_blank">6</a></td>
+									<td style="text-align: center;"><a href="https://github.com/vatsalparikh07/100-days-of-data-science-challenge/tree/main/Day%205.%20Regression%20Problem%3A%20House%20Sales%20in%20King%20County%2C%20USA" target="_blank">7</a></td>
+									<td style="text-align: center;">8</td>
+								  </tr>
+								  <tr>
+									<td style="text-align: center;">9</td>
+									<td style="text-align: center;">10</td>
+									<td style="text-align: center;">11</td>
+									<td style="text-align: center;">12</td>
+									<td style="text-align: center;">13</td>
+									<td style="text-align: center;">14</td>
+									<td style="text-align: center;">15</td>
+								  </tr>
+								  <tr>
+									<td style="text-align: center;">16</td>
+									<td style="text-align: center;">17</td>
+									<td style="text-align: center;">18</td>
+									<td style="text-align: center;">19</td>
+									<td style="text-align: center;">20</td>
+									<td style="text-align: center;">21</td>
+									<td style="text-align: center;">22</td>
+								  </tr>
+								  <tr>
+									<td style="text-align: center;">23</td>
+									<td style="text-align: center;">24</td>
+									<td style="text-align: center;">25</td>
+									<td style="text-align: center;">26</td>
+									<td style="text-align: center;">27</td>
+									<td style="text-align: center;">28</td>
+									<td style="text-align: center;">29</td>
+								  </tr>
+								  <tr>
+									<td style="text-align: center;">30</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								  </tr>
+							</tbody>
+						</table>
+						<div class="mb-4"></div> <!-- Add gap here -->
+					</div>
+				</div>
+	
+				<div class="col-lg-6">
+					<div class="resume-wrap ftco-animate text-center">
+						<span class="date">July 2024</span>
+						<div class="mb-4"></div> <!-- Add gap here -->
+						<table border="1" cellspacing="0" cellpadding="5" style="width: 70%; margin: 0 auto;">
+							<colgroup>
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th style="text-align: center;">Sun</th>
+									<th style="text-align: center;">Mon</th>
+									<th style="text-align: center;">Tue</th>
+									<th style="text-align: center;">Wed</th>
+									<th style="text-align: center;">Thu</th>
+									<th style="text-align: center;">Fri</th>
+									<th style="text-align: center;">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">1</td>
+									<td style="text-align: center;">2</td>
+									<td style="text-align: center;">3</td>
+									<td style="text-align: center;">4</td>
+									<td style="text-align: center;">5</td>
+									<td style="text-align: center;">6</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">7</td>
+									<td style="text-align: center;">8</td>
+									<td style="text-align: center;">9</td>
+									<td style="text-align: center;">10</td>
+									<td style="text-align: center;">11</td>
+									<td style="text-align: center;">12</td>
+									<td style="text-align: center;">13</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">14</td>
+									<td style="text-align: center;">15</td>
+									<td style="text-align: center;">16</td>
+									<td style="text-align: center;">17</td>
+									<td style="text-align: center;">18</td>
+									<td style="text-align: center;">19</td>
+									<td style="text-align: center;">20</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">21</td>
+									<td style="text-align: center;">22</td>
+									<td style="text-align: center;">23</td>
+									<td style="text-align: center;">24</td>
+									<td style="text-align: center;">25</td>
+									<td style="text-align: center;">26</td>
+									<td style="text-align: center;">27</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">28</td>
+									<td style="text-align: center;">29</td>
+									<td style="text-align: center;">30</td>
+									<td style="text-align: center;">31</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								</tr>	
+							</tbody>
+						</table>
+						<div class="mb-4"></div> <!-- Add gap here -->
+					</div>
+				</div>
+	
+				<div class="col-lg-6">
+					<div class="resume-wrap ftco-animate text-center">
+						<span class="date">August 2024</span>
+						<div class="mb-4"></div> <!-- Add gap here -->
+						<table border="1" cellspacing="0" cellpadding="5" style="width: 70%; margin: 0 auto;">
+							<colgroup>
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th style="text-align: center;">Sun</th>
+									<th style="text-align: center;">Mon</th>
+									<th style="text-align: center;">Tue</th>
+									<th style="text-align: center;">Wed</th>
+									<th style="text-align: center;">Thu</th>
+									<th style="text-align: center;">Fri</th>
+									<th style="text-align: center;">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">1</td>
+									<td style="text-align: center;">2</td>
+									<td style="text-align: center;">3</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">4</td>
+									<td style="text-align: center;">5</td>
+									<td style="text-align: center;">6</td>
+									<td style="text-align: center;">7</td>
+									<td style="text-align: center;">8</td>
+									<td style="text-align: center;">9</td>
+									<td style="text-align: center;">10</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">11</td>
+									<td style="text-align: center;">12</td>
+									<td style="text-align: center;">13</td>
+									<td style="text-align: center;">14</td>
+									<td style="text-align: center;">15</td>
+									<td style="text-align: center;">16</td>
+									<td style="text-align: center;">17</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">18</td>
+									<td style="text-align: center;">19</td>
+									<td style="text-align: center;">20</td>
+									<td style="text-align: center;">21</td>
+									<td style="text-align: center;">22</td>
+									<td style="text-align: center;">23</td>
+									<td style="text-align: center;">24</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">25</td>
+									<td style="text-align: center;">26</td>
+									<td style="text-align: center;">27</td>
+									<td style="text-align: center;">28</td>
+									<td style="text-align: center;">29</td>
+									<td style="text-align: center;">30</td>
+									<td style="text-align: center;">31</td>
+								</tr>								
+							</tbody>
+						</table>
+						<div class="mb-4"></div> <!-- Add gap here -->
+					</div>
+				</div>
+	
+				<div class="col-lg-6">
+					<div class="resume-wrap ftco-animate text-center">
+						<span class="date">September 2024</span>
+						<div class="mb-4"></div> <!-- Add gap here -->
+						<table border="1" cellspacing="0" cellpadding="5" style="width: 70%; margin: 0 auto;">
+							<colgroup>
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+								<col style="width: 14%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th style="text-align: center;">Sun</th>
+									<th style="text-align: center;">Mon</th>
+									<th style="text-align: center;">Tue</th>
+									<th style="text-align: center;">Wed</th>
+									<th style="text-align: center;">Thu</th>
+									<th style="text-align: center;">Fri</th>
+									<th style="text-align: center;">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align: center;">1</td>
+									<td style="text-align: center;">2</td>
+									<td style="text-align: center;">3</td>
+									<td style="text-align: center;">4</td>
+									<td style="text-align: center;">5</td>
+									<td style="text-align: center;">6</td>
+									<td style="text-align: center;">7</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">8</td>
+									<td style="text-align: center;">9</td>
+									<td style="text-align: center;">10</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+									<td style="text-align: center;">-</td>
+								</tr>																
+							</tbody>
+						</table>
+						<div class="mb-4"></div> <!-- Add gap here -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Publications</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="26">0</strong>
+                <span>Certifications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/vatsalparikh07" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+		<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+					<p>Bloomington, IN, USA</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+					<p><a href="mailto:parikhvatsal7101@gmail.com">parikhvatsal7101@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Download Resume</h3>
+					<p><a href="https://drive.google.com/file/d/1nuuS6fpwG_CpWJgGUb9B1lU4L2tentRQ/view?usp=drive_link" target="_blank">Resume</a></p>
+				</div>
+			</div>
+		</div>
+		
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
